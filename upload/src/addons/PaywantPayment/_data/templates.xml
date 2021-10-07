@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="admin" title="payment_profile_paywant" version_id="1" version_string="1.0.0"><![CDATA[
+<xf:textboxrow name="options[paywant_api_key]" value="{$profile.options.paywant_api_key}" type="text" label="{{ phrase('paywant_api_key') }}">
+    <xf:explain>
+            {{ phrase('paywant_api_key_explain') }}
+    </xf:explain>
+</xf:textboxrow>
+<xf:textboxrow name="options[paywant_secret_key]" value="{$profile.options.paywant_secret_key}" type="text" label="{{ phrase('paywant_secret_key') }}">
+    <xf:explain>
+            {{ phrase('paywant_secret_key_explain') }}
+    </xf:explain>
+</xf:textboxrow>
+<xf:textboxrow name="options[usd_try]" value="{$profile.options.usd_try}" type="number" min="1" step=".01" label="{{ phrase('usd_try') }}">
+    <xf:explain>
+            {{ phrase('usd_try_explain') }}
+    </xf:explain>
+</xf:textboxrow>
+]]></template>
+  <template type="public" title="payment_initiate_paywant" version_id="1" version_string="1.0.0"><![CDATA[<xf:css src="payment_initiate.less" />
+<xf:title>{{ phrase('paywant_confirm_payment_details') }}</xf:title>
+<xf:if is="$paywant.status">
+	<form action="{$paywant.message}" class="block block--paymentInitiate" method="GET">
+		<div class="block-container">
+			<div class="block-body">
+				<xf:formrow controlid="element">
+					<div class="formRow-explain">{{ phrase('payments_processed_securely_by_x', {'link': 'https://www.paywant.com/', 'provider': 'Paywant'}) }}</div>
+				</xf:formrow>
+				<hr class="formRowSep" />
+				<xf:formrow label="" rowtype="button">
+					<xf:button type="submit" icon="payment">
+						{{ phrase('pay_x', {'cost': $purchase.cost|currency($purchase.currency)}) }}
+					</xf:button>
+				</xf:formrow>
+			</div>
+		</div>
+	</form>
+<xf:else />
+	{$paywant.message}
+</xf:if>
+
+]]></template>
+</templates>

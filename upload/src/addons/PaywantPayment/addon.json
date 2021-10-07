@@ -1,0 +1,16 @@
+{
+    "legacy_addon_id": "PaywantPayment",
+    "title": "Paywant Payment Integration",
+    "description": "Adds Paywant as a supported payment method.",
+    "version_id": 1000000,
+    "version_string": "1.0.0",
+    "dev": "Paywant",
+    "dev_url": "https://www.paywant.com",
+    "faq_url": "",
+    "support_url": "https://www.paywant.com/contact",
+    "extra_urls": {
+        "paywant": "https://www.paywant.com"
+    },
+    "require": [],
+    "icon": "icon.png"
+}

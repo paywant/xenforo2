@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="paywant_api_key" version_id="1" version_string="1.0.0"><![CDATA[API Key]]></phrase>
+  <phrase title="paywant_api_key_explain" version_id="1" version_string="1.0.0"><![CDATA[Paywant Magaza Anahtariniz]]></phrase>
+  <phrase title="paywant_confirm_payment_details" version_id="1" version_string="1.0.0"><![CDATA[Paywant ile Ode]]></phrase>
+  <phrase title="paywant_secret_key" version_id="1" version_string="1.0.0"><![CDATA[Secret Key]]></phrase>
+  <phrase title="paywant_secret_key_explain" version_id="1" version_string="1.0.0"><![CDATA[Paywant Gizli (Secret) Magaza Anahtariniz]]></phrase>
+  <phrase title="usd_try" version_id="1" version_string="1.0.0"><![CDATA[1 Dolar Kaç TL?]]></phrase>
+  <phrase title="usd_try_explain" version_id="1" version_string="1.0.0"><![CDATA[USD ile sattığınız ürünlerin fiyatını Türk Lirası olarak Paywant'a göndermeniz gerekir. Bu sebeple güncel dolar kurunu giriniz.]]></phrase>
+  <phrase title="usd_try_must_be_numeric" version_id="1" version_string="1.0.0"><![CDATA[USD/TRY sadece sayi içerebilir.]]></phrase>
+  <phrase title="you_need_to_provide_your_api_and_secret_key" version_id="1" version_string="1.0.0"><![CDATA[Paywant API ve Secret Key zorunludur.]]></phrase>
+</phrases>

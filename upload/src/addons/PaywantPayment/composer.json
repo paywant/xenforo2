@@ -1,0 +1,5 @@
+{
+    "require": {
+        "paywant/php-sdk": "^1.0"
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "55c56b6b7315b24a28001deec3f5a6b7",
+    "packages": [
+        {
+            "name": "paywant/php-sdk",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paywant/php-sdk.git",
+                "reference": "b8346fd6106f3c482f3e4b8da42d10d197c1594e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paywant/php-sdk/zipball/b8346fd6106f3c482f3e4b8da42d10d197c1594e",
+                "reference": "b8346fd6106f3c482f3e4b8da42d10d197c1594e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Paywant\\": "source/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "paywant & contributors",
+                    "homepage": "https://github.com/paywant/php-sdk/contributors"
+                }
+            ],
+            "description": "paywant api php client",
+            "homepage": "https://www.paywant.com",
+            "keywords": [
+                "payment processing",
+                "paywant",
+                "paywant api",
+                "paywant api php",
+                "paywant api php client",
+                "paywant payment",
+                "paywant php",
+                "paywant.com"
+            ],
+            "time": "2021-03-01T21:53:59+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
