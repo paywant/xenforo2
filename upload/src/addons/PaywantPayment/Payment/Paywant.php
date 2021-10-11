@@ -304,7 +304,7 @@ class Paywant extends AbstractProvider
             'purchase' => $purchase,
             'purchasableTypeId' => $purchase->purchasableTypeId,
             'purchasableId' => $purchase->purchasableId,
-            'publicKey' => $paymentProfile->options['publicKey'],
+            'publicKey' => $paymentProfile->options['paywant_api_key'],
             'cost' => $this->prepareCost($paymentProfile->options, $purchase->cost, $purchase->currency),
         ];
     }
